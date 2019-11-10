@@ -1,0 +1,17 @@
+package com.sathya.test;
+
+import com.sathya.dao.IEmpDao;
+import com.sathya.dao.impl.EmpDaoImpl;
+
+public class Test {
+
+	public static void main(String[] args) {
+		IEmpDao  dao=new  EmpDaoImpl();
+		dao.findAllEmployees();
+		System.out.println("#########################");
+		dao.findByDeptno(30);
+		
+
+	}
+
+}
